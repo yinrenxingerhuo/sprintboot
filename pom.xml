@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <groupId>com.person.vincent</groupId>
+    <artifactId>spring-boot-learn</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>spring-boot-start-demo</module>
+        <module>spring-boot-read-config-demo</module>
+        <module>spring-boot-restful-api-demo</module>
+        <module>spring-boot-thymeleaf-demo</module>
+        <module>spring-boot-swagger2-demo</module>
+        <module>spring-boot-global-exception-demo</module>
+        <module>spring-boot-aop-example</module>
+        <module>spring-boot-activemq-example</module>
+        <module>spring-boot-jdbc-template-demo</module>
+        <module>spring-data-jpa-demo</module>
+        <module>spring-boot-datasource-demo</module>
+        <module>spring-boot-redis-demo</module>
+        <module>spring-boot-hot-deployment-demo</module>
+        <module>spring-boot-google-guice-demos</module>
+        <module>spring-boot-elasticsearch-demo</module>
+        <module>spring-boot-session-example</module>
+        <module>spring-boot-configuration-demo</module>
+        <module>spring-boot-email-example</module>
+        <module>spring-boot-quartz-example</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.8.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
